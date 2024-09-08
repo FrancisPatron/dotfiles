@@ -43,7 +43,7 @@ vim.opt.smartcase = true
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
 
--- Decrease update time
+--b Decrease update time
 vim.opt.updatetime = 250
 
 -- Decrease mapped sequence wait time
@@ -117,4 +117,12 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
     vim.highlight.on_yank()
   end,
+})
+
+-- Set up custom file associations
+vim.filetype.add({
+  extension = {
+    json = "jsonc",
+    cli = "bash",
+  },
 })
