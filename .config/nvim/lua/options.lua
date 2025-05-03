@@ -13,6 +13,8 @@ vim.g.have_nerd_font = false
 
 vim.opt.virtualedit=onemore
 
+vim.opt.clipboard = "unnamedplus"
+
 -- Tab settings
 vim.opt.tabstop = 2
 vim.opt.shiftwidth=2
